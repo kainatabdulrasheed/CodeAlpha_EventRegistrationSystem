@@ -57,7 +57,15 @@ The app will start on `http://localhost:8000`
 
 ## API Usage
 
-*(To be added as endpoints are built)*
+All registration endpoints require authentication (logged-in user).
+
+Method	    Endpoint	                        Description
+GET	        /api/events/	                    Get a list of all events
+GET   	    /api/events/<id>/	                Get details of a single event
+POST	    /api/registrations/	                Register for an event (send the event ID in the request body the logged-in user is linked automatically)
+
+GET	        /api/registrations/my/	            View your own registrations
+DELETE	    /api/registrations/<id>/cancel/	   Cancel one of your own registrations
 
 ## Author
 Kainat Rasheed — CodeAlpha Backend Development Intern
